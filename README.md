@@ -5,10 +5,11 @@ Display cpu temperature in the status bar of iTerm2
 
 # How to Install
 
-1. Clone this repository
-2. You’ll need to place the script in ~/Library/Application Support/iTerm2/Scripts/AutoLaunch. 
-3. Then manually launch it or restart the app.
-4. Then, navigate to Preferences > Profiles > Session. Turn on Status Bar Enabled and select Configure Status Bar. Drag the 🌡x°C component into the bottom section.
+1. Install osx-cpu-temp `brew install osx-cpu-temp`
+2. Clone this repository
+3. You’ll need to place the script in ~/Library/Application Support/iTerm2/Scripts/AutoLaunch. 
+4. Then manually launch it or restart the app.
+5. Then, navigate to Preferences > Profiles > Session. Turn on Status Bar Enabled and select Configure Status Bar. Drag the 🌡x°C component into the bottom section.
 
 # Customisation
 
