@@ -1,15 +1,16 @@
 #!/usr/bin/env python3.7
 
-import asyncio
 import iterm2
-import os
 from subprocess import check_output
+
+
 def GetTemp():
-     output = check_output(["/usr/local/bin/osx-cpu-temp"])
-     return output.decode("utf-8").rstrip('\n') 
+    output = check_output(["/usr/local/bin/osx-cpu-temp"])
+    return output.decode("utf-8").rstrip('\n')
+
 
 async def main(connection):
-    app = await iterm2.async_get_app(connection)
+    await iterm2.async_get_app(connection)
 
     component = iterm2.StatusBarComponent(
         short_description="Temp CPU",
@@ -27,5 +28,6 @@ async def main(connection):
     # Register the component.
     await component.async_register(connection, coro)
 
-# This instructs the script to run the "main" coroutine and to keep running even after it returns.
+# This instructs the script to run the "main" coroutine and to keep
+# running even after it returns.
 iterm2.run_forever(main)
