@@ -10,7 +10,7 @@ def GetTemp():
 def GetFan():
     fans = re.findall(r"(\d{1,4}) RPM", check_output(["/usr/local/bin/osx-cpu-temp", "-f"]).decode("utf-8").replace("\n", " "))
     # On Catalina , the fan speed is not yet managed by "/usr/local/bin/osx-cpu-temp" see https://github.com/lavoiesl/osx-cpu-temp/issues/28
-    if len(fans) > 2 :
+    if len(fans) > 1 :
         avg = int((int(fans[0]) + int(fans[1])) / 2)
         return str(avg) + " RPM"
     else :
