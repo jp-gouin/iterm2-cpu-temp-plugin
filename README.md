@@ -1,6 +1,8 @@
 # iterm2-cpu-temp-plugin
 Display cpu temperature in the status bar of iTerm2
 
+> **M1 version is avalailable [here](https://github.com/jp-gouin/iterm2-cpu-temp-plugin/tree/m1)**
+
 ## Based on [osx-cpu-temp](https://github.com/lavoiesl/osx-cpu-temp)
 
 # How to Install
