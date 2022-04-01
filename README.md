@@ -1,11 +1,17 @@
 # iterm2-cpu-temp-plugin
 Display cpu temperature in the status bar of iTerm2
 
-## Based on [osx-cpu-temp](https://github.com/lavoiesl/osx-cpu-temp)
+## Based on [smctemp](https://github.com/narugit/smctemp)
 
 # How to Install
 
-1. Install osx-cpu-temp `brew install osx-cpu-temp`
+1. Install smctemp
+```console
+$ git clone https://github.com/narugit/smctemp
+$ cd smctemp
+$ sudo make install
+$ smctemp -c
+```
 2. Clone this repository
 3. Enable Python API in iTerm2. Go to Preferences > General > Magic > Enable Python Api
 4. Create Folder AutoLaunch `mkdir ~/Library/Application\ Support/iTerm2/Scripts/AutoLaunch`
@@ -15,11 +21,4 @@ Display cpu temperature in the status bar of iTerm2
 
 # Customisation
 
-You can change the unit into Farenheit by editing the 
-```
-output = check_output(["/usr/local/bin/osx-cpu-temp"])
-```
-by 
-```
-output = check_output(["/usr/local/bin/osx-cpu-temp"],["-F])
-```
+None yet
